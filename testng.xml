@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Shipment Quote Test Suite">
+  <test thread-count="5" name="Shipment Quote Calculation Test">
+    <parameter name="fromCountry" value="Malaysia"/>
+    <parameter name="fromPostcode" value="35600"/>
+    <parameter name="toCountry" value="India"/>
+    <parameter name="weight" value="1"/>
+    <classes>
+      <class name="com.pos.Shipment_Quotation.ShipmentQuoteTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

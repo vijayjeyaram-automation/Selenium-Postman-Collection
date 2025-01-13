@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Shipment Quote Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Shipment Quote Calculation Test(failed)">
+    <parameter name="fromCountry" value="Malaysia"/>
+    <parameter name="weight" value="1"/>
+    <parameter name="fromPostcode" value="35600"/>
+    <parameter name="toCountry" value="India"/>
+    <classes>
+      <class name="com.pos.Shipment_Quotation.ShipmentQuoteTest">
+        <methods>
+          <include name="verifyShipmentQuoteCalculation" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.pos.Shipment_Quotation.ShipmentQuoteTest -->
+    </classes>
+  </test> <!-- Shipment Quote Calculation Test(failed) -->
+</suite> <!-- Failed suite [Shipment Quote Test Suite] -->
